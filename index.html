@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>site building</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR START -->
+    <header>
+      <nav id="nav">
+        <p class="nav-title">
+          <span class="nav-title-1st">Site</span> building
+        </p>
+        <div class="nav-search-and-menu-container">
+          <input id="nav-menu-checkbox" type="checkbox" />
+          <form class="nav-search-container">
+            <label for="nav-search-input" class="nav-search-icon">
+              <img src="./imgs/magnifying-glass.svg" alt="search icon" />
+            </label>
+            <input
+              required
+              type="text"
+              placeholder="Keresés"
+              id="nav-search-input"
+            />
+            <button class="nav-search-close-icon" type="reset">
+              <img src="./imgs/input-close.svg" alt="close icon for input" />
+            </button>
+          </form>
+          <div class="nav-links-and-buttons-container">
+            <ul class="nav-links">
+              <li class="nav-link"><a>főoldal</a></li>
+              <li class="nav-link">
+                <input type="checkbox" id="nav-link-subjects-input" />
+                <label
+                  for="nav-link-subjects-input"
+                  aria-haspopup="true"
+                  class="nav-link-subjects"
+                >
+                  <span>témák</span
+                  ><img class="nav-drop-down" src="imgs/drop-down.svg" />
+                </label>
+                <ul class="nav-link-subjects-menu">
+                  <li class="nav-link-subjects-link">
+                    <a href="#subjectsID">Akadálymentes turizmus</a>
+                  </li>
+                  <li class="nav-link-subjects-link">
+                    <a href="#subjectsID">Szenior turizmus</a>
+                  </li>
+                  <li class="nav-link-subjects-link">
+                    <a href="#subjectsID"
+                      >Egészségügyi turizmus Alapismeretek</a
+                    >
+                  </li>
+                  <li class="nav-link-subjects-link">
+                    <a href="#subjectsID">Egészségügyi turizmus Vezetőknek</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-link"><a>rólunk</a></li>
+            </ul>
+            <div class="nav-button-container">
+              <button class="nav-login-btn">belépés</button>
+              <button class="nav-register-btn">regisztráció</button>
+            </div>
+          </div>
+          <label for="nav-menu-checkbox" class="nav-menu-icon"
+            ><img src="./imgs/menu-icon.svg"
+          /></label>
+        </div>
+      </nav>
+    </header>
+    <!-- NAVBAR END -->
+    <!-- MAIN START -->
+    <main>
+      <!-- WELCOME START -->
+      <section class="welcome">
+        <img
+          class="welcome-deco"
+          src="./imgs/welcome-deco.svg"
+          alt="just a random shape"
+        />
+        <div class="welcome-text-container">
+          <strong class="welcome-text-title">Legyél Anett!</strong>
+          <p class="welcome-text">
+            aki már több kurzuson is résztvett, melyek segítették a munkájában.
+            A turizmussal és az egészszégüggyel kapcsolatosan számtalan tananyag
+            áll a rendelkezésedre.
+          </p>
+        </div>
+        <form class="input-learning-container">
+          <img
+            class="welcome-search-icon"
+            src="imgs/magnifying-glass-alt.svg"
+            alt="search icon"
+          />
+          <input
+            class="input-learning"
+            type="text"
+            placeholder="Mit szeretnél tanulni?"
+            required
+          />
+          <button class="input-learning-close-icon" type="reset">
+            <img src="./imgs/input-close.svg" alt="close icon for input" />
+          </button>
+          <div class="welcome-img-container">
+            <img
+              class="welcome-img"
+              src="./imgs/welcome-img-mobile.png"
+              alt="a young woman watching her phone"
+            />
+          </div>
+        </form>
+      </section>
+      <!-- WELCOME END -->
+      <!-- SUBJECTS START -->
+      <section id="subjectsID" class="subjects">
+        <div class="subjects-title-and-content-container">
+          <h1 class="subjects-title">Témák</h1>
+          <p class="subjects-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque auctor leo dolor, dapibus tristique felis pretium
+            dapibus. Vestibulum
+          </p>
+          <div class="subjects-content-container">
+            <ul class="subjects-content-list">
+              <li class="subjects-links">
+                <a href="#">Akadálymentes turizmus</a>
+                <input
+                  type="radio"
+                  name="subjectsRadio"
+                  id="subject1"
+                  value="subject1"
+                  class="subjects-radio"
+                  checked
+                />
+                <label for="subject1" class="subjects-radio-label"
+                  >Akadálymentes turizmus</label
+                >
+              </li>
+              <li class="subjects-links">
+                <a href="#">Szenior turizmus</a>
+                <input
+                  type="radio"
+                  name="subjectsRadio"
+                  id="subject2"
+                  value="subject2"
+                  class="subjects-radio"
+                />
+                <label for="subject2" class="subjects-radio-label"
+                  >Szenior turizmus</label
+                >
+              </li>
+              <li class="subjects-links">
+                <a href="#">Egészségügyi turizmus Alapismeretek</a>
+                <input
+                  type="radio"
+                  name="subjectsRadio"
+                  id="subject3"
+                  value="subject3"
+                  class="subjects-radio"
+                />
+                <label for="subject3" class="subjects-radio-label"
+                  >Egészségügyi turizmus Alapismeretek</label
+                >
+              </li>
+              <li class="subjects-links">
+                <a href="#">Egészségügyi turizmus Vezetőknek</a>
+                <input
+                  type="radio"
+                  name="subjectsRadio"
+                  id="subject4"
+                  value="subject4"
+                  class="subjects-radio"
+                />
+                <label for="subject4" class="subjects-radio-label"
+                  >Egészségügyi turizmus Vezetőknek</label
+                >
+              </li>
+            </ul>
+            <div class="subjects-cards-container">
+              <div class="subjects-card-container">
+                <img
+                  class="subjects-card-img"
+                  src="./imgs/card-tablet.png"
+                  alt="people at a hotel"
+                />
+                <div class="subjects-card-info-container">
+                  <div class="subjects-card-rate-container">
+                    <img
+                      src="./imgs/favourites-filled-star-symbol.svg"
+                      alt="gold star icon for ratings"
+                      class="subjects-card-rate-img"
+                    />
+                    <p class="subjects-card-rate-score">
+                      (4,5)
+                    </p>
+                  </div>
+                  <div class="subjects-card-published-container">
+                    <img
+                      src="./imgs/clock-circular-outline.svg"
+                      alt="a black clock for the publishing time"
+                      class="subjects-card-published-img"
+                    />
+                    <p class="subjects-card-published-time">4óra</p>
+                  </div>
+                </div>
+                <div class="subjects-card-content-container">
+                  <strong class="subjects-card-title">
+                    Hosszú cím is lehet itt Lorem ipsum
+                  </strong>
+                  <p class="subjects-card-description">
+                    Rövid leírás ez max két soros legyen
+                  </p>
+                </div>
+                <div class="subjects-card-tags-container">
+                  <p class="subjects-card-tag">Tag</p>
+                  <p class="subjects-card-tag">Tag</p>
+                </div>
+              </div>
+              <div class="subjects-card-container">
+                <img
+                  src="./imgs/card-tablet.png"
+                  class="subjects-card-img"
+                  alt="people at a hotel"
+                />
+                <div class="subjects-card-info-container">
+                  <div class="subjects-card-rate-container">
+                    <img
+                      src="./imgs/favourites-filled-star-symbol.svg"
+                      alt="gold star icon for ratings"
+                      class="subjects-card-rate-img"
+                    />
+                    <p class="subjects-card-rate-score">
+                      (4,5)
+                    </p>
+                  </div>
+                  <div class="subjects-card-published-container">
+                    <img
+                      src="./imgs/clock-circular-outline.svg"
+                      alt="a black clock for the publishing time"
+                      class="subjects-card-published-img"
+                    />
+                    <p class="subjects-card-published-time">4óra</p>
+                  </div>
+                </div>
+                <div class="subjects-card-content-container">
+                  <strong class="subjects-card-title">
+                    Hosszú cím is lehet itt Lorem ipsum
+                  </strong>
+                  <p class="subjects-card-description">
+                    Rövid leírás ez max két soros legyen
+                  </p>
+                </div>
+                <div class="subjects-card-tags-container">
+                  <p class="subjects-card-tag">Tag</p>
+                  <p class="subjects-card-tag">Tag</p>
+                </div>
+              </div>
+              <div class="subjects-card-container">
+                <img
+                  src="./imgs/card-tablet.png"
+                  class="subjects-card-img"
+                  alt="people at a hotel"
+                />
+                <div class="subjects-card-info-container">
+                  <div class="subjects-card-rate-container">
+                    <img
+                      src="./imgs/favourites-filled-star-symbol.svg"
+                      alt="gold star icon for ratings"
+                      class="subjects-card-rate-img"
+                    />
+                    <p class="subjects-card-rate-score">
+                      (4,5)
+                    </p>
+                  </div>
+                  <div class="subjects-card-published-container">
+                    <img
+                      src="./imgs/clock-circular-outline.svg"
+                      alt="a black clock for the publishing time"
+                      class="subjects-card-published-img"
+                    />
+                    <p class="subjects-card-published-time">4óra</p>
+                  </div>
+                </div>
+                <div class="subjects-card-content-container">
+                  <strong class="subjects-card-title">
+                    Hosszú cím is lehet itt Lorem ipsum
+                  </strong>
+                  <p class="subjects-card-description">
+                    Rövid leírás ez max két soros legyen
+                  </p>
+                </div>
+                <div class="subjects-card-tags-container">
+                  <p class="subjects-card-tag">Tag</p>
+                  <p class="subjects-card-tag">Tag</p>
+                </div>
+              </div>
+            </div>
+            <img
+              src="./imgs/subjects-yellow-shape.svg"
+              alt="page decoration"
+              class="subjects-yellow-shape"
+            />
+            <img
+              src="./imgs/subjects-blue-shape.svg"
+              alt="page decoration"
+              class="subjects-blue-shape"
+            />
+          </div>
+          <a href="#" class="subjects-view-all">Megnézem mindet</a>
+        </div>
+      </section>
+      <!-- SUBJECT END -->
+      <!-- UNIQUENESS START -->
+      <section class="uniqueness">
+        <div class="uniqueness-title-and-text">
+          <h1 class="uniqueness-title">
+            Mi teszi különlegessé a mi kurzusainkat?
+          </h1>
+          <div class="uniqueness-text-container">
+            <input type="checkbox" id="uniqueness-hidden-input" />
+            <p class="uniqueness-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque auctor leo dolor, dapibus tristique felis pretium
+              dapibus. Vestibulum blandit vehicula cursus. Morbi facilisis
+              commodo libero id pretium. Ut vestibulum erat finibus tortor
+              aliquet, ultricies sodales urna sagittis. Ut pretium urna urna,
+              non convallis quam ullamcorper id. Vestibulum euismod, arcu vel
+              pulvinar hendrerit, mauris felis pellentesque ligula, vel rutrum
+              elit purus a nibh. Nulla interdum massa et nibh imperdiet, ac
+              aliquam dolor dictum. Morbi sit amet risus et neque varius
+              ullamcorper. Phasellus blandit convallis felis. Maecenas nec magna
+              non lacus cursus accumsan non eu eros. Quisque ac bibendum est,
+              vel vehicula enim. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Donec vel eros eget leo tincidunt vestibulum eget
+              at magna. Praesent odio massa, lobortis id pharetra non, volutpat
+              sed nulla. Sed interdum euismod mauris eleifend porta. Curabitur
+              malesuada cursus lectus, nec eleifend magna maximus sed.
+            </p>
+            <div class="blur"></div>
+            <label for="uniqueness-hidden-input" class="uniqueness-show-rest">
+              <img
+                src="./imgs/chevron-down.svg"
+                alt="show the rest of text"
+                class="uniqueness-show-rest-img"
+              />
+            </label>
+            <a class="uniqueness-read-more" href="#">Tovább olvasom</a>
+          </div>
+        </div>
+        <img class="uniqueness-img" src="imgs/uniqueness-img-mobile.png" />
+        <img
+          src="imgs/uniqueness-pinkish-shape.svg"
+          class="uniqueness-pinkish-shape"
+          alt="page decoration"
+        />
+      </section>
+      <!-- UNIQUENESS END -->
+      <!-- ABOUT START -->
+      <section class="about">
+        <h1 class="about-title">
+          Amit rólunk mondtak a tanulók
+        </h1>
+        <div class="about-content-container">
+          <div class="students-wrapper-container">
+            <div class="students-container">
+              <img
+                src="./imgs/greenish-shape.svg"
+                alt="shape"
+                class="about-greenish-shape"
+              />
+              <div id="student-1st" class="student-container">
+                <div class="student">
+                  <img
+                    class="student-img"
+                    src="./imgs/kitti1.png"
+                    alt="student"
+                  />
+                  <p class="student-name">Horvát Kitti</p>
+                  <p class="student-title">titulus</p>
+                </div>
+                <p class="student-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque auctor leo dolor, dapibus tristique felis pretium
+                </p>
+              </div>
+              <div id="student-2nd" class="student-container">
+                <div class="student">
+                  <img
+                    class="student-img"
+                    src="./imgs/kitti2.png"
+                    alt="student"
+                  />
+                  <p class="student-name">Horvát Kitti</p>
+                  <p class="student-title">titulus</p>
+                </div>
+                <p class="student-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque auctor leo dolor, dapibus tristique felis pretium
+                </p>
+              </div>
+              <div id="student-3rd" class="student-container">
+                <div class="student">
+                  <img
+                    class="student-img"
+                    src="./imgs/kitti3.png"
+                    alt="student"
+                  />
+                  <p class="student-name">Horvát Kitti</p>
+                  <p class="student-title">titulus</p>
+                </div>
+                <p class="student-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque auctor leo dolor, dapibus tristique felis pretium
+                </p>
+              </div>
+            </div>
+            <img
+              src="./imgs/about-arrow.svg"
+              class="about-arrow-left"
+              alt="left navigational arrow for the students"
+            />
+            <img
+              src="./imgs/about-arrow.svg"
+              class="about-arrow-right"
+              alt="right navigational arrow for the students"
+            />
+            <div class="about-radio-buttons">
+              <div class="about-radio-button-wrapper">
+                <input
+                  type="radio"
+                  name="student"
+                  id="student1"
+                  class="about-radio"
+                  value="student1"
+                />
+                <label for="student1" class="about-custom-radio"></label>
+              </div>
+              <div class="about-radio-button-wrapper">
+                <input
+                  type="radio"
+                  name="student"
+                  id="student2"
+                  class="about-radio"
+                  value="student2"
+                  checked
+                />
+                <label for="student2" class="about-custom-radio"></label>
+              </div>
+              <div class="about-radio-button-wrapper">
+                <input
+                  type="radio"
+                  name="student"
+                  id="student3"
+                  class="about-radio"
+                  value="student3"
+                />
+                <label for="student3" class="about-custom-radio"></label>
+              </div>
+              <div class="about-radio-button-wrapper">
+                <input
+                  type="radio"
+                  name="student"
+                  id="student4"
+                  class="about-radio"
+                  value="student4"
+                />
+                <label for="student4" class="about-custom-radio"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT END -->
+    </main>
+    <!-- MAIN END -->
+    <!-- FOOTER START -->
+    <div class="footer-wrapper">
+      <footer>
+        <a href="#nav" class="footer-back-to-top"
+          ><img src="./imgs/back-to-top.svg" alt="back to the top of the page"
+        /></a>
+        <div class="footer-register-container">
+          <div class="footer-register-text-wrapper">
+            <strong class="footer-register-title"
+              >Készen állsz a kezdésre?</strong
+            >
+            <p class="footer-register-text">Hozzál létre egy fiókot</p>
+          </div>
+          <a class="footer-register-btn">Regisztráció</a>
+          <img
+            src="imgs/footer-yellow-shape.svg"
+            class="footer-yellow-shape"
+            alt="decoration for the footer"
+          />
+        </div>
+        <div class="footer-site-information-container">
+          <div class="footer-site-name-socials-container">
+            <div class="footer-site-name-container">
+              <strong class="footer-site-name">Az oldal neve</strong>
+              <p class="footer-site-short-info">
+                Rövid információ, Rövid információ, Rövid információ, Rövid
+                információ, Rövid információ, Rövid információ
+              </p>
+            </div>
+            <div class="footer-socials-container">
+              <strong class="footer-socials-text">Kövess minket</strong>
+              <div class="footer-socials-brands-container">
+                <a
+                  href="https://hu-hu.facebook.com/"
+                  class="facebook"
+                  target="_blank"
+                  ><img src="./imgs/facebook (1).svg" alt="facebook"
+                /></a>
+                <a
+                  href="https://twitter.com/?lang=hu"
+                  class="twitter"
+                  target="_blank"
+                  ><img src="./imgs/twitter.svg" alt="twitter"
+                /></a>
+                <a
+                  href="https://www.linkedin.com/"
+                  class="linkedin"
+                  target="_blank"
+                  ><img src="./imgs/linkedin (1).svg" alt="linkedin"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-links-subjects-container">
+            <div class="footer-links-container">
+              <strong class="footer-links-title">
+                Gyorslinkek
+              </strong>
+              <div class="footer-links-links-container">
+                <a href="#" class="footer-links-link">Link</a>
+                <a href="#" class="footer-links-link">Link</a>
+                <a href="#" class="footer-links-link">Link</a>
+                <a href="#" class="footer-links-link">Link</a>
+                <a href="#" class="footer-links-link">Link</a>
+              </div>
+            </div>
+            <div class="footer-subjects-container">
+              <strong class="footer-subjects-title">Témák</strong>
+              <div class="footer-subjects-links-container">
+                <a href="#" class="footer-subjects-link">Link</a>
+                <a href="#" class="footer-subjects-link">Link</a>
+                <a href="#" class="footer-subjects-link">Link</a>
+                <a href="#" class="footer-subjects-link">Link</a>
+                <a href="#" class="footer-subjects-link">Link</a>
+              </div>
+            </div>
+            <div class="footer-contact-container">
+              <strong class="footer-contact-title">Elérhetőségek</strong>
+              <a href="#" class="contact-info">Cím</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- FOOTER END -->
+  </body>
+</html>
